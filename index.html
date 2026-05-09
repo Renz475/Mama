@@ -116,15 +116,6 @@
       .gallery img {max-width: 150px;}
     }
   </style>
-  <script>
-    function openLightbox(src) {
-      document.getElementById('lightbox-img').src = src;
-      document.getElementById('lightbox').style.display = 'flex';
-    }
-    function closeLightbox() {
-      document.getElementById('lightbox').style.display = 'none';
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -174,5 +165,15 @@ I love you so much, Ma. ❤️
   <div class="heart" style="left:50%; animation-delay:4s;">💕</div>
   <div class="heart" style="left:70%; animation-delay:6s;">💓</div>
   <div class="heart" style="left:90%; animation-delay:8s;">💗</div>
+
+    <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
