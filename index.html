@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Mother's Day</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff0f5, #ffe4e1); /* soft pink gradient */
+      color: #4a2c2a; /* warm brown for text */
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      background: #d36b8c; /* rosy pink */
+      color: #fff;
+      padding: 30px 20px;
+      animation: fadeDown 2s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: pulse 3s infinite;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ffe4f0; /* lighter pink accent */
+    }
+    .message {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2em;
+      line-height: 1.8;
+      background: #fffafc; /* soft cream background */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      animation: slideUp 2s ease-out;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      border: 4px solid #d36b8c; /* pink border */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    footer {
+      background: #d36b8c;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+      animation: fadeUp 2s ease-in-out;
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: fixed;
+      bottom: -50px;
+      font-size: 24px;
+      color: #ff4d88;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes fadeUp {
+      from {transform: translateY(50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(100px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes pulse {
+      0% {text-shadow: 0 0 10px rgba(255,255,255,0.6);}
+      50% {text-shadow: 0 0 20px rgba(255,255,255,1);}
+      100% {text-shadow: 0 0 10px rgba(255,255,255,0.6);}
+    }
+    @keyframes floatUp {
+      0% {transform: translateY(0) scale(1); opacity: 1;}
+      100% {transform: translateY(-800px) scale(1.5); opacity: 0;}
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header h1 {font-size: 2em;}
+      .message {font-size: 1em;}
+      .gallery img {max-width: 180px;}
+    }
+    @media (max-width: 480px) {
+      header h1 {font-size: 1.5em;}
+      .message {font-size: 0.9em;}
+      .gallery img {max-width: 150px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Mother's Day 💐</h1>
+    <p>Celebrating the most amazing woman in my life</p>
+  </header>
+
+  <section class="message">
+    <p>
+Hi Ma,
+
+Happy Mother’s Day! 💐 Alam mo, minsan nahihirapan akong i-express lahat ng nararamdaman ko, pero today gusto ko talagang sabihin nang buo: thank you for everything.
+
+Thank you sa lahat ng sakripisyo mo—yung mga oras na puyat ka para alagaan ako, yung mga times na inuuna mo needs ko kaysa sa sarili mo, at yung unconditional love na kahit anong mangyari, hindi nauubos. You’ve been my guide, my teacher, my best friend, and my safe place.
+
+Hindi ko man masabi araw-araw, pero sobrang grateful ako sa lahat ng ginagawa mo. You taught me how to be strong, how to be kind, and how to keep going kahit mahirap. Ikaw yung reason kung bakit may courage ako to chase my dreams.
+
+Ma, I want you to know na kahit tumanda ako, kahit saan ako mapunta, you’ll always be my home. I promise to make you proud and to give back kahit konti lang compared sa lahat ng binigay mo.
+
+Today is your day, and I hope you feel how loved and appreciated you are. You are the strongest, most beautiful, and most inspiring woman I know.
+
+I love you so much, Ma. ❤️
+    </p>
+  </section>
+
+  <section class="gallery">
+    <img src="images\505114306_30751527364446781_1720596276243844267_n.jpg" alt="Mom Picture 1">
+    <img src="images\505227697_30751527367780114_7763587352185569536_n.jpg" alt="Mom Picture 2">
+    <img src="images\515011289_23945380721777716_2851390516664522372_n.jpg" alt="Mom Picture 3">
+    <img src="images\515503854_30820902840833964_7741013035633271144_n.jpg" alt="Mom Picture 4">
+    <img src="images\516668236_30820902694167312_4756803193471344173_n.jpg" alt="Mom Picture 5">
+    <img src="images\517584535_30820902804167301_6688576159991707365_n.jpg" alt="Mom Picture 6">
+  </section>
+
+  <footer>
+    <p>Made with love for Mom 🌸</p>
+  </footer>
+
+  <!-- Floating hearts -->
+  <div class="heart" style="left:10%;">❤️</div>
+  <div class="heart" style="left:30%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:50%; animation-delay:4s;">💕</div>
+  <div class="heart" style="left:70%; animation-delay:6s;">💓</div>
+  <div class="heart" style="left:90%; animation-delay:8s;">💗</div>
+</body>
+</html>
